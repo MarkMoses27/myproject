@@ -1,0 +1,7 @@
+<!-- emails/templates/emails/booking.html -->
+<form method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- Renders the entire form with labels and widgets -->
+
+    <button type="submit">Submit</button>
+</form>
